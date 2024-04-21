@@ -1,15 +1,14 @@
 import '../css/Sidebar.css'
+import {Icon} from "@iconify/react";
 
-import {ReactNode} from "react";
-
-interface Props {
-    children: ReactNode
-}
-
-function Sidebar(props : Props) {
+function Sidebar() {
     return (
         <div className='sidebar'>
-            {props.children}
+            <ul>
+                <li><Icon icon="ph:devices-duotone" width="30px" height="30px" />Devices</li>
+                <li><Icon icon="ic:round-notifications" width="30px" height="30px" />Notifications</li>
+                <li><Icon icon="ic:baseline-settings" width="30px" height="30px" />Settings</li>
+            </ul>
         </div>
     )
 }

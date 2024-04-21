@@ -1,0 +1,6 @@
+.data {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: calc(100% - 300px);
+}

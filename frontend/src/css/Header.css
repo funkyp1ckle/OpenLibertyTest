@@ -17,11 +17,8 @@ header {
     padding: 0 var(--header-margin);
 }
 
-header .Hamburger {
-    left: 0;
-}
-
 header #logo {
+    left: 0;
     width: var(--header-logo-size);
     height: var(--header-logo-size);
 

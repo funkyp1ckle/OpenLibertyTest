@@ -8,7 +8,7 @@ function Header() {
         <header>
             <Hamburger/>
             <img src={logo} alt='Logo' id='logo'/>
-            <img src={profilePicture} alt='Profile Picture' id='profile-picture'/>
+            <img src={profilePicture} alt='Profile' id='profile-picture'/>
         </header>
     );
 }
