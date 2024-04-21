@@ -1,0 +1,41 @@
+header {
+    --header-height: 80px;
+    --header-margin: 25px;
+    --header-background: #FFFFFF;
+    --header-text-color: #BEBEBE;
+    --header-border-color: #F1F1F1;
+
+    --header-logo-size: 54px;
+    --header-profile-picture-size: 54px;
+
+    height: var(--header-height);
+    background-color: var(--header-background);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--header-border-color);
+
+    padding: 0 var(--header-margin);
+}
+
+header .Hamburger {
+    left: 0;
+}
+
+header #logo {
+    width: var(--header-logo-size);
+    height: var(--header-logo-size);
+
+    margin-left: 40px;
+
+    cursor: pointer;
+}
+
+header #profile-picture {
+    margin-left: auto;
+    border-radius: 50%;
+
+    width: var(--header-profile-picture-size);
+    height: var(--header-profile-picture-size);
+
+    cursor: pointer;
+}

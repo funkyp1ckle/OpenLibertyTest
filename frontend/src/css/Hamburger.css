@@ -1,0 +1,50 @@
+.Hamburger {
+    --burger-color: #D7D7D7;
+    --burger-width: 30px;
+    --burger-height: 23px;
+    --burger-line-thickness: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--burger-width);
+    height: var(--burger-height);
+}
+
+.Hamburger label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    cursor: pointer;
+}
+
+.Hamburger input {
+    display: none;
+}
+
+.Hamburger label span {
+    display: block;
+    height: var(--burger-line-thickness);
+    width: 100%;
+    transition: .25s ease-in-out;
+    background: var(--burger-color);
+    transform-origin: left center;
+}
+
+.Hamburger input:checked ~ label span:nth-of-type(1) {
+    width: calc((var(--burger-height) - 2px) * sqrt(2));
+    transform: translate(calc((var(--burger-width) - (var(--burger-height))) / 2), calc(var(--burger-line-thickness) / -2)) rotate(45deg);
+}
+
+.Hamburger input:checked ~ label span:nth-of-type(2) {
+    width: 0;
+    opacity: 0;
+}
+
+.Hamburger input:checked ~ label span:nth-of-type(3) {
+    width: calc((var(--burger-height) - 2px) * sqrt(2));
+    transform: translate(calc((var(--burger-width) - (var(--burger-height))) / 2), calc(var(--burger-line-thickness) / 2)) rotate(-45deg);
+}
