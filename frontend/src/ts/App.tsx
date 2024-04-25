@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Sidebar />
-      <Data>test</Data>
+      <Data />
     </>
   );
 }
