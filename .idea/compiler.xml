@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Devices" />
         <module name="Gateway" />
+        <module name="DiscoveryServer" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Devices" options="-parameters" />
+      <module name="DiscoveryServer" options="-parameters" />
       <module name="Gateway" options="-parameters" />
     </option>
   </component>

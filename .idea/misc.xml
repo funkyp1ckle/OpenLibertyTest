@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/Devices/pom.xml" />
         <option value="$PROJECT_DIR$/services/Gateway/pom.xml" />
         <option value="$PROJECT_DIR$/services/Devices/pom.xml" />
+        <option value="$PROJECT_DIR$/services/LoadBalancer/pom.xml" />
+        <option value="$PROJECT_DIR$/services/DiscoveryServer/pom.xml" />
       </list>
     </option>
   </component>
